@@ -9,12 +9,15 @@
 	http://www.springframework.org/schema/context/spring-context.xsd
 	http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
-	<!-- 鎸囧畾鑷姩鎼滅储Bean缁勪欢銆佽嚜鍔ㄦ悳绱㈠垏闈㈢被 -->
-	<context:component-scan base-package="org.crazyit.app.service
+	<!-- 指定自动搜索Bean组件、自动搜索切面类 -->
+	<!--<context:component-scan base-package="org.crazyit.app.service
 		,org.crazyit.app.aspect">
 		<context:include-filter type="annotation"
 			expression="org.aspectj.lang.annotation.Aspect"/>
-	</context:component-scan>
-	<!-- 鍚姩@AspectJ鏀寔 -->
-	<aop:aspectj-autoproxy/>
+	</context:component-scan>-->
+	<!-- 启动@AspectJ支持 -->
+	<!--<aop:aspectj-autoproxy/>-->
+	<!--自动扫描指定包及其子包下的所有Bean类-->
+	<context:component-scan base-package="org.crazyit.app.service"/>
+
 </beans>

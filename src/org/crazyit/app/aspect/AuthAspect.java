@@ -1,7 +1,6 @@
 package org.crazyit.app.aspect;
 
 import org.aspectj.lang.annotation.*;
-import org.aspectj.lang.*;
 // 定义一个切面
 @Aspect
 public class AuthAspect
